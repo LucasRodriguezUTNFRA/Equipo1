@@ -9,19 +9,21 @@ namespace Boleteria
     public class Show
     {
         //Establecimiento lugarUsado;
-        string lugarUsado;
-        Artista artista;
-        List<Persona> espectadores; // = new List<Persona>();
-        DateTime fechaDeShow;
-        int duracion;
+        public string lugarUsado;
+        public Artista artista;
+        public List<Persona> espectadores; // = new List<Persona>();
+        public DateTime fechaDeShow;
+        public int duracion;
+        public float precioBase;
 
-        public Show(string lugarUsado, Artista artista, List<Persona> espectadores, DateTime fechaDeShow, int duracion)
+        public Show(string lugarUsado, Artista artista, List<Persona> espectadores, DateTime fechaDeShow, int duracion, float precioBase)
         {
             this.lugarUsado = lugarUsado;
             this.artista = artista;
             this.espectadores = espectadores;
             this.fechaDeShow = fechaDeShow;
             this.duracion = duracion;
+            this.precioBase = precioBase;
         }
     }
 }

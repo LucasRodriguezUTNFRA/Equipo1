@@ -24,6 +24,13 @@ namespace Boleteria
             clientes = new List<Cliente>();
             empleados = new List<Empleado>();
         }
-     
+        static Entrada AgregarEspectadorAlShow(Cliente unCliente, Show unShow, Categoria unaCategoria, Ubicacion unaUbicacion)
+        {
+            // Validar si el show tiene una capacidad disponible
+
+            unShow.espectadores.Add(unCliente);
+
+            return new Entrada(unShow, unCliente, unaCategoria, unaUbicacion);
+        }
     }
 }

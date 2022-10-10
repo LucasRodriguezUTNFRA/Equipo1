@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Boleteria
 {
+    public enum TipoArtista
+    {
+        Banda,
+        Solista
+    }
     public class Artista : Persona
     {
-
+        string nombreArtistica;
+        
     }
 }

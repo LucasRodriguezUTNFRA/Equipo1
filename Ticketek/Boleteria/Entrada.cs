@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Boleteria
 {
-    enum Ubicacion
-    { 
+    public enum Ubicacion
+    {
         Platea,
         Campo
     }
-    enum Categoria
+    public enum Categoria
     {
         Gold,
         Vip,
@@ -20,15 +20,35 @@ namespace Boleteria
 
     public class Entrada
     {
-        static int id;
+        static int contador;
+        int id;
         Show show;
-        float precioBase;
-        //precioTot prop
+        Cliente cliente;
+        Categoria categoria;
+        Ubicacion ubicacion;        
 
         //id de la clase
         static Entrada()
         {
-            id = 0;
+            contador = 0;
+        }
+
+        public Entrada(Show show, Cliente cliente, Categoria categoria, Ubicacion ubicacion)
+        {
+            this.id = contador++;
+            this.show = show;
+            this.cliente = cliente;
+            this.categoria = categoria;
+            this.ubicacion = ubicacion;
+        }
+
+        public Show Show
+        {
+            get => show;
+        }
+        public float PrecioTotal
+        {
+            get { return show.precioBase * 2; }
         }
     }
 }
