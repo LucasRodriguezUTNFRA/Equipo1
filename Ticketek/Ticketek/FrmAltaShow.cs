@@ -27,7 +27,7 @@ namespace Ticketek
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            Administracion.Shows.Add(new Show("lugar random", (Artista)cboArtista.SelectedItem), dtpFecha.Value, int.Parse(txtDuracion.Text), float.Parse(txtPrecio.Text));
+            Administracion.Shows.Add(new Show("lugar random", (Artista)cboArtista.SelectedItem, dtpFecha.Value, int.Parse(txtDuracion.Text), float.Parse(txtPrecio.Text)));
         }
     }
 }

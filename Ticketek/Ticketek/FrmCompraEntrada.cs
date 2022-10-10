@@ -31,7 +31,7 @@ namespace Ticketek
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Entrada entradaNueva = Administracion.AgregarEspectadorAlShow(clienteLogeado, (Show)cboShows.SelectedItem, (Ubicacion)cboUbicacion.SelectedItem, (Categoria)cboCategoria.SelectedItem);
+            Entrada entradaNueva = Administracion.AgregarEspectadorAlShow(clienteLogeado, (Show)cboShows.SelectedItem, (Categoria)cboUbicacion.SelectedItem, (Ubicacion)cboCategoria.SelectedItem);
             MessageBox.Show($"{entradaNueva}", "Venta realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

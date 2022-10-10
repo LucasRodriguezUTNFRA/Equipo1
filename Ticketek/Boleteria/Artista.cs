@@ -13,7 +13,11 @@ namespace Boleteria
     }
     public class Artista : Persona
     {
-        string nombreArtistica;
-        
+        string nombreArtistico;
+
+        public Artista(string nombre, string apellido, int dni, DateTime fechaDeNacimiento, string nombreArtistico) : base(nombre, apellido, dni, fechaDeNacimiento)
+        {
+            
+        }
     }
 }
