@@ -33,6 +33,10 @@ namespace Boleteria
         public static Entrada AgregarEspectadorAlShow(Cliente unCliente, Show unShow, Categoria unaCategoria, Ubicacion unaUbicacion)
         {
             // Validar si el show tiene una capacidad disponible
+            if (unCliente is null || unShow is null || unaCategoria < 0 || unaUbicacion < 0)
+            {
+                return null;
+            }
 
             unShow.espectadores.Add(unCliente);
 

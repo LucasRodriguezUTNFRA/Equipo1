@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketek", "Ticketek\Ticketek.csproj", "{BE4EAE5B-AE86-407A-9C0A-B541141405FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketek", "Ticketek\Ticketek.csproj", "{BE4EAE5B-AE86-407A-9C0A-B541141405FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boleteria", "Boleteria\Boleteria.csproj", "{E242C122-4B92-4909-8769-EA3A32D1BDC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boleteria", "Boleteria\Boleteria.csproj", "{E242C122-4B92-4909-8769-EA3A32D1BDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTicketekEquipo1", "TestTicketekEquipo1\TestTicketekEquipo1.csproj", "{1B612AD5-0BA6-43CB-A6E8-C475311549C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E242C122-4B92-4909-8769-EA3A32D1BDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E242C122-4B92-4909-8769-EA3A32D1BDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E242C122-4B92-4909-8769-EA3A32D1BDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B612AD5-0BA6-43CB-A6E8-C475311549C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B612AD5-0BA6-43CB-A6E8-C475311549C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B612AD5-0BA6-43CB-A6E8-C475311549C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B612AD5-0BA6-43CB-A6E8-C475311549C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
