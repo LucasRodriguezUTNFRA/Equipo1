@@ -26,5 +26,9 @@ namespace Boleteria
             this.precioBase = precioBase;
         }
 
+        public override string ToString()
+        {
+            return $"Establecimiento: {lugarUsado}, Artista: {artista}, Fecha: {fechaDeShow}, Duracion: {duracion} horas";
+        }
     }
 }

@@ -17,7 +17,11 @@ namespace Boleteria
 
         public Artista(string nombre, string apellido, int dni, DateTime fechaDeNacimiento, string nombreArtistico) : base(nombre, apellido, dni, fechaDeNacimiento)
         {
-            
+            this.nombreArtistico = nombreArtistico;
+        }
+        public override string ToString()
+        {
+            return base.ToString() + $"Nombre artistico: {nombreArtistico}";
         }
     }
 }

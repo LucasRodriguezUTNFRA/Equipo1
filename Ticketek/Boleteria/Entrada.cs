@@ -50,5 +50,10 @@ namespace Boleteria
         {
             get { return show.precioBase * 2; }
         }
+
+        public override string ToString()
+        {
+            return $"Precio final: {PrecioTotal}, Show: {show}";
+        }
     }
 }

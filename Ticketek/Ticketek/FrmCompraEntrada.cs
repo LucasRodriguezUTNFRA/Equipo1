@@ -27,6 +27,9 @@ namespace Ticketek
         private void FrmCompraEntrada_Load(object sender, EventArgs e)
         {
             this.Text = "Compra de entrada";
+            cboShows.DataSource = Administracion.Shows;
+            cboCategoria.DataSource = Enum.GetValues(typeof(Ubicacion));
+            cboUbicacion.DataSource = Enum.GetValues(typeof(Categoria));
         }
 
         private void button1_Click(object sender, EventArgs e)

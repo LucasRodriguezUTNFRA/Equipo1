@@ -39,12 +39,12 @@
             this.cboShows.FormattingEnabled = true;
             this.cboShows.Location = new System.Drawing.Point(37, 29);
             this.cboShows.Name = "cboShows";
-            this.cboShows.Size = new System.Drawing.Size(286, 23);
+            this.cboShows.Size = new System.Drawing.Size(845, 23);
             this.cboShows.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(104, 222);
+            this.button1.Location = new System.Drawing.Point(380, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 51);
             this.button1.TabIndex = 1;
@@ -57,7 +57,7 @@
             this.cboUbicacion.FormattingEnabled = true;
             this.cboUbicacion.Location = new System.Drawing.Point(37, 96);
             this.cboUbicacion.Name = "cboUbicacion";
-            this.cboUbicacion.Size = new System.Drawing.Size(286, 23);
+            this.cboUbicacion.Size = new System.Drawing.Size(845, 23);
             this.cboUbicacion.TabIndex = 2;
             // 
             // cboCategoria
@@ -65,14 +65,14 @@
             this.cboCategoria.FormattingEnabled = true;
             this.cboCategoria.Location = new System.Drawing.Point(37, 163);
             this.cboCategoria.Name = "cboCategoria";
-            this.cboCategoria.Size = new System.Drawing.Size(286, 23);
+            this.cboCategoria.Size = new System.Drawing.Size(845, 23);
             this.cboCategoria.TabIndex = 3;
             // 
             // FrmCompraEntrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 308);
+            this.ClientSize = new System.Drawing.Size(894, 308);
             this.Controls.Add(this.cboCategoria);
             this.Controls.Add(this.cboUbicacion);
             this.Controls.Add(this.button1);
