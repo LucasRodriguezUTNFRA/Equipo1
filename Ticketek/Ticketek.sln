@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketek", "Ticketek\Ticket
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Boleteria", "Boleteria\Boleteria.csproj", "{E242C122-4B92-4909-8769-EA3A32D1BDC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTicketekEquipo1", "TestTicketekEquipo1\TestTicketekEquipo1.csproj", "{1B612AD5-0BA6-43CB-A6E8-C475311549C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BoleteriaTest", "TestTicketekEquipo1\BoleteriaTest.csproj", "{1B612AD5-0BA6-43CB-A6E8-C475311549C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
