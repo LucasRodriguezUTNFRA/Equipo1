@@ -33,6 +33,10 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.cboArtista = new System.Windows.Forms.ComboBox();
             this.txtDuracion = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAceptar
@@ -74,11 +78,51 @@
             this.txtDuracion.Size = new System.Drawing.Size(483, 23);
             this.txtDuracion.TabIndex = 9;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(38, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Artista";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(39, 101);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 15);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Duracion";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(44, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Fecha";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(37, 143);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Precio base";
+            // 
             // FrmAltaShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 298);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtDuracion);
             this.Controls.Add(this.cboArtista);
             this.Controls.Add(this.dtpFecha);
@@ -99,5 +143,9 @@
         private DateTimePicker dtpFecha;
         private ComboBox cboArtista;
         private TextBox txtDuracion;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }

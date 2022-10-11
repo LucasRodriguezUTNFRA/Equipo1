@@ -13,8 +13,8 @@ namespace Boleteria
         public Artista artista;
         public List<Persona> espectadores; // = new List<Persona>();
         public DateTime fechaDeShow;
-        public int duracion;
-        public float precioBase;
+        public int duracionEnHoras;
+        public float precioBaseEnPesos;
 
         public Show(string lugarUsado, Artista artista, DateTime fechaDeShow, int duracion, float precioBase)
         {
@@ -22,13 +22,21 @@ namespace Boleteria
             this.artista = artista;
             this.espectadores = new List<Persona>();
             this.fechaDeShow = fechaDeShow;
-            this.duracion = duracion;
-            this.precioBase = precioBase;
+            this.duracionEnHoras = duracion;
+            this.precioBaseEnPesos = precioBase;
+        }
+
+        public int CantidadEspectadores
+        {
+            get
+            {
+                return this.espectadores.Count;
+            }
         }
 
         public override string ToString()
         {
-            return $"Establecimiento: {lugarUsado}, Artista: {artista}, Fecha: {fechaDeShow}, Duracion: {duracion} horas";
+            return $"Establecimiento: {lugarUsado}, Artista: {artista}, Fecha: {fechaDeShow}, Duracion: {duracionEnHoras} horas";
         }
     }
 }

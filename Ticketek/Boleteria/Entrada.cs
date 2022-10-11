@@ -8,14 +8,14 @@ namespace Boleteria
 {
     public enum Ubicacion
     {
-        Platea,
-        Campo
+        Campo = 1,
+        Platea
     }
     public enum Categoria
     {
+        Clasic = 1,
         Gold,
-        Vip,
-        Clasic
+        Vip
     }
 
     public class Entrada
@@ -46,14 +46,25 @@ namespace Boleteria
         {
             get => show;
         }
-        public float PrecioTotal
+
+        public Cliente Cliente
         {
-            get { return show.precioBase * 2; }
+            get
+            {
+                return this.cliente;
+            }
+        }
+        public float PrecioTotalEnPesos
+        {
+            get
+            {
+                return this.show.precioBaseEnPesos + ((int)this.ubicacion * 1000) + ((int)this.categoria * 500);
+            }
         }
 
         public override string ToString()
         {
-            return $"Precio final: {PrecioTotal}, Show: {show}";
+            return $"Precio final: {PrecioTotalEnPesos}, Show: {show}";
         }
     }
 }
