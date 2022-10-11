@@ -1,4 +1,4 @@
-﻿namespace Boleteria
+﻿namespace Boleteria.Entidades
 {
     public class Establecimiento
     {
@@ -14,7 +14,7 @@
 
         public override string ToString()
         {
-            return $"Nombre: {this.nombre}. Capacidad: {this.capacidadTotal} personas.";
+            return $"Nombre: {nombre}. Capacidad: {capacidadTotal} personas.";
         }
     }
 }

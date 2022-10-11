@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Boleteria
+namespace Boleteria.Entidades
 {
     public class Cliente : Persona
     {
@@ -12,7 +12,7 @@ namespace Boleteria
 
         public Cliente(string nombre, string apellido, int dni, DateTime fechaDeNacimiento) : base(nombre, apellido, dni, fechaDeNacimiento)
         {
-            this.cantidadRecitales = 0;
+            cantidadRecitales = 0;
         }
     }
 }

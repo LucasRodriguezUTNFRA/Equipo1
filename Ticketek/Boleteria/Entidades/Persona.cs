@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Boleteria
+namespace Boleteria.Entidades
 {
     public abstract class Persona
     {
@@ -9,7 +9,7 @@ namespace Boleteria
         string apellido;
         int dni;
         DateTime fechaDeNacimiento;
-        
+
         protected Persona(string nombre, string apellido, int dni, DateTime fechaDeNacimiento)
         {
             this.nombre = nombre;
@@ -19,7 +19,7 @@ namespace Boleteria
         }
 
         public string NombreCompleto { get => nombre + " " + apellido; }
-        public int Edad { get => (DateTime.Now - fechaDeNacimiento).Days/365 ; }
+        public int Edad { get => (DateTime.Now - fechaDeNacimiento).Days / 365; }
         public DateTime FechaDeNacimiento { get => fechaDeNacimiento; set => fechaDeNacimiento = value; }
         public int Dni { get => dni; set => dni = value; }
 

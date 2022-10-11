@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Boleteria
+namespace Boleteria.Entidades
 {
     public class Empleado : Persona
     {

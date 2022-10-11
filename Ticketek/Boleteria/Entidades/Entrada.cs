@@ -3,29 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Boleteria.Enums;
 
-namespace Boleteria
+namespace Boleteria.Entidades
 {
-    public enum Ubicacion
-    {
-        Campo = 1,
-        Platea
-    }
-    public enum Categoria
-    {
-        Clasic = 1,
-        Gold,
-        Vip
-    }
-
     public class Entrada
     {
         static int contador;
         int id;
         Show show;
         Cliente cliente;
-        Categoria categoria;
-        Ubicacion ubicacion;        
+        CategoriaEntrada categoria;
+        UbicacionEntrada ubicacion;
 
         //id de la clase
         static Entrada()
@@ -33,9 +22,9 @@ namespace Boleteria
             contador = 0;
         }
 
-        public Entrada(Show show, Cliente cliente, Categoria categoria, Ubicacion ubicacion)
+        public Entrada(Show show, Cliente cliente, CategoriaEntrada categoria, UbicacionEntrada ubicacion)
         {
-            this.id = contador++;
+            id = contador++;
             this.show = show;
             this.cliente = cliente;
             this.categoria = categoria;
@@ -51,14 +40,14 @@ namespace Boleteria
         {
             get
             {
-                return this.cliente;
+                return cliente;
             }
         }
         public float PrecioTotalEnPesos
         {
             get
             {
-                return this.show.precioBaseEnPesos + ((int)this.ubicacion * 1000) + ((int)this.categoria * 500);
+                return show.precioBaseEnPesos + (int)ubicacion * 1000 + (int)categoria * 500;
             }
         }
 

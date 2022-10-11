@@ -1,4 +1,6 @@
 ﻿using Boleteria;
+using Boleteria.Entidades;
+using Boleteria.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,13 +30,13 @@ namespace Ticketek
         {
             this.Text = "Compra de entrada";
             cboShows.DataSource = Administracion.Shows;
-            cboCategoria.DataSource = Enum.GetValues(typeof(Ubicacion));
-            cboUbicacion.DataSource = Enum.GetValues(typeof(Categoria));
+            cboCategoria.DataSource = Enum.GetValues(typeof(UbicacionEntrada));
+            cboUbicacion.DataSource = Enum.GetValues(typeof(CategoriaEntrada));
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Entrada entradaNueva = Administracion.AgregarEspectadorAlShow(clienteLogeado, (Show)cboShows.SelectedItem, (Categoria)cboUbicacion.SelectedItem, (Ubicacion)cboCategoria.SelectedItem);
+            Entrada entradaNueva = Administracion.AgregarEspectadorAlShow(clienteLogeado, (Show)cboShows.SelectedItem, (CategoriaEntrada)cboUbicacion.SelectedItem, (UbicacionEntrada)cboCategoria.SelectedItem);
             MessageBox.Show($"{entradaNueva}", "Venta realizada", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }

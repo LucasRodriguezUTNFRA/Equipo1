@@ -1,4 +1,5 @@
 ﻿using Boleteria;
+using Boleteria.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,7 @@ namespace Ticketek
         }
         private void FrmAltaShow_Load(object sender, EventArgs e)
         {
-            cboArtista.DataSource = Administracion.Artistas;
+            cboArtista.DataSource = Administracion.BaseDeDatos.Artistas;
             this.Text = "Alta de shows";
         }
 

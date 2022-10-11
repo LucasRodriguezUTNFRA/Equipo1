@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Boleteria
+namespace Boleteria.Entidades
 {
     public class Show
     {
@@ -20,17 +20,17 @@ namespace Boleteria
         {
             this.lugarUsado = lugarUsado;
             this.artista = artista;
-            this.espectadores = new List<Persona>();
+            espectadores = new List<Persona>();
             this.fechaDeShow = fechaDeShow;
-            this.duracionEnHoras = duracion;
-            this.precioBaseEnPesos = precioBase;
+            duracionEnHoras = duracion;
+            precioBaseEnPesos = precioBase;
         }
 
         public int CantidadEspectadores
         {
             get
             {
-                return this.espectadores.Count;
+                return espectadores.Count;
             }
         }
 

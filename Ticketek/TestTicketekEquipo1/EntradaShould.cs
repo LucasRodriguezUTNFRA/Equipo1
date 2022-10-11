@@ -1,16 +1,17 @@
-﻿using Boleteria;
+﻿using Boleteria.Entidades;
+using Boleteria.Enums;
 
-namespace TestTicketekEquipo1
+namespace BoleteriaTest
 {
     [TestClass]
     public  class EntradaShould
     {
         [TestMethod]
-        [DataRow(Ubicacion.Campo, Categoria.Vip, 1000, 3500)]
-        [DataRow(Ubicacion.Campo, Categoria.Gold, 500, 2500)]
-        [DataRow(Ubicacion.Platea, Categoria.Gold, 1500, 4500)]
-        [DataRow(Ubicacion.Campo, Categoria.Clasic, 2000, 3500)]
-        public void CalcularBienElPrecio(Ubicacion ubicacion, Categoria categoria, float precioBase, float precioEsperado)
+        [DataRow(UbicacionEntrada.Campo, CategoriaEntrada.Vip, 1000, 3500)]
+        [DataRow(UbicacionEntrada.Campo, CategoriaEntrada.Gold, 500, 2500)]
+        [DataRow(UbicacionEntrada.Platea, CategoriaEntrada.Gold, 1500, 4500)]
+        [DataRow(UbicacionEntrada.Campo, CategoriaEntrada.Clasic, 2000, 3500)]
+        public void CalcularBienElPrecio(UbicacionEntrada ubicacion, CategoriaEntrada categoria, float precioBase, float precioEsperado)
         {
             // Given
             Cliente cliente = new Cliente("Nombre", "Apellido", 12345678, DateTime.Parse("15/05/1980"));
