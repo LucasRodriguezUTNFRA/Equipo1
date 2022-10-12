@@ -19,13 +19,18 @@ namespace Boleteria
         {
             shows = new List<Show>();
             entradas = new List<Entrada>();
-            baseDeDatos = new BaseDeDatos();
+            SetBaseDeDatos(new BaseDeDatos());
             CargarArtistas();
         }
 
         public static IBaseDeDatos BaseDeDatos { get => baseDeDatos; }
         public static List<Show> Shows { get => shows;}
         public static List<Establecimiento> Establecimientos { get; set; }
+
+        public static void SetBaseDeDatos(IBaseDeDatos baseDeDatos)
+        {
+            Administracion.baseDeDatos = baseDeDatos;
+        }
 
         public static Entrada AgregarEspectadorAlShow(Cliente unCliente, Show unShow, CategoriaEntrada unaCategoria, UbicacionEntrada unaUbicacion)
         {
